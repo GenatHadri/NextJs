@@ -13,6 +13,9 @@ export default function Home() {
       <Link href="/news" className="text-xl">
         News
       </Link>
+      <Link href="/events" className="text-xl">
+        Events
+      </Link>
     </div>
   );
 }

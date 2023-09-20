@@ -34,10 +34,10 @@ export async function getServerSideProps(context) {
   );
   const data = await response.json();
 
-  console.log(`Pre-rendering News Articles for category ${category}`);
+  // console.log(`Pre-rendering News Articles for category ${category}`);
   res.setHeader("Set-Cookie", ["name=Genat"]);
-  console.log(req.headers.cookie);
-  console.log(query);
+  // console.log(req.headers.cookie);
+  // console.log(query);
   return {
     props: {
       articles: data,

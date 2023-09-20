@@ -29,7 +29,7 @@ function NewsArticleList({ articles }) {
 export default NewsArticleList;
 
 export async function getServerSideProps() {
-  console.log("Pre-rendering NewsArticleList");
+  // console.log("Pre-rendering NewsArticleList");
   const response = await fetch("http://localhost:4000/news");
   const data = await response.json();
 
